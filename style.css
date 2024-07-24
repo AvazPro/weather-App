@@ -149,4 +149,13 @@ a {
         padding-top: 30px;
     }
 }
+@media (max-width: 390px){
+    .weather__box {
+        padding: 10px;
+    }
+    .humidity__text, .pressure__text {
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
  
