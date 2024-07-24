@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather website</title>
+    <link rel="shortcut icon" href="images/weather_img.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="weather__box">
+            <h1 class="title">weather app</h1>
+            <form class="form">
+                <input class="input" type="text" placeholder="City name" required>
+                <button class="search__btn">Search</button>
+            </form>
+            <div class="error"></div>
+            <img src="" alt="" class="weather__img">
+            <div class="weather__deg"><span class="weather__degree"></span><sup>&#x2103</sup></div>
+            <div class="city__name"></div>
+            <div class="humidity__air-pressure">
+                <div class="humidity__box">
+                    <img src="images/humidity.png" alt="humidity" class="humidity__img">
+                    <div class="humidity">
+                        <div class="humidity__num"><span class="humidity__percent"></span>%</div>
+                        <div class="humidity__text">Humidity</div>
+                    </div>
+                </div>
+                <div class="air__pressure-box">
+                    <img src="images/air_pressure.png" alt="humidity" class="humidity__img">
+                    <div class="air__pressure">
+                        <div class="pressure__num"></div>
+                        <div class="pressure__text">Air pressure</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>

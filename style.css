@@ -1,0 +1,152 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a, label {
+    display: inline-block;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+}
+
+/* main part */
+.main {
+    background-color: #F9F9E0;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.weather__box {
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: #3AA6B9;
+    padding: 20px;
+}
+.title {
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.input {
+    width: 76%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: italic;
+}
+.input:focus {
+    box-shadow: 0 2px 6px 0.6px black;
+}
+.search__btn {
+    width: 22%;
+    padding: 0 15px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-style: italic;
+}
+.error {
+    margin-top: 20px;
+    color: red;
+    font-size: 18px;
+    text-align: center;
+    display: none;
+}
+
+.weather__img {
+    width: 190px;
+}
+.weather__deg {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+.city__name {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+}
+
+.humidity__air-pressure {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.humidity__img {
+    width: 80px;
+    height: auto;
+}
+.humidity__box, .air__pressure-box {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.humidity, .air__pressure {
+    display: flex;
+    flex-direction: column;
+}
+.humidity__text, .pressure__text {
+    font-size: 24px;
+    font-weight: bold;
+    font-weight: 400;
+    font-style: italic;
+}
+.humidity__num, .pressure__num {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    font-weight: 400;
+    font-style: italic;
+}
+@media (max-width: 500px) {
+    .weather__box {
+        width: 90%;
+    }
+    .humidity__img {
+        width: 60px;
+        height: auto;
+    }
+    .humidity__text, .pressure__text {
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .main {
+        align-items: flex-start;
+        padding-top: 30px;
+    }
+}
+ 
